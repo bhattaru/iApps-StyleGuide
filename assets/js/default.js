@@ -136,20 +136,6 @@ $('#notify-error-tc').on('click', function (event) {
         type: 'danger'
     });
 });
-$('#notify-warning-c').on('click', function (event) {
-    event.preventDefault();
-     $.notify({
-        icon: 'fas fa-info-circle',
-        title: '<strong>Info!</strong>',
-        message: 'A simple info notification - check it out!',
-    }, {
-        placement: {
-            align: 'center'
-        },
-        type: 'warning'
-    });
-});
-
 $('#notify-success-afade').on('click', function (event) {
     event.preventDefault();
      $.notify({
