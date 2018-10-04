@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Microchip Internet Applications - Style Guide</title>
-    <base href="/iApps-StyleGuide/">
+	<base href="/iApps-StyleGuide/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -14,10 +14,25 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/styles.css" />
     <link rel="icon" href="favicon.png" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
+    <!-- the gear icon that opens the box when you click on it -->
+    <input id="settings-btn" type="checkbox" class="settings-btn">
+    <label for="settings-btn" class="settings-box-element"><i class="fas fa-cog fa-spin"></i></label>
+    <!-- the white box that contains the buttons -->
+    <div class="buttons-wrapper settings-box-element">
+        <div id="styleOptions">
+            <div><a href="javascript: void(0)" data-theme="styles" id="default"><img src="assets/images/default_bg.png" />
+                    Default Theme</a></div>
+            <div><a href="javascript: void(0)" data-theme="styles-blue" id="styles-blue"><img src="assets/images/blue_bg.png" />
+                    Blue Theme</a></div>
+            <div><a href="javascript: void(0)" data-theme="styles-green" id="styles-green"><img src="assets/images/green_bg.png" />
+                    Gray Theme </a> </div>
+        </div>
+    </div>
     <div class="wrapper">
         <!-- Left Pane: Start -->
         <div id="left-menu">
@@ -668,11 +683,11 @@
 
         </div>
         <!-- Content Section: End -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/jQuery.style.switcher.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
         <script src="assets/js/default.js" crossorigin="anonymous"></script>

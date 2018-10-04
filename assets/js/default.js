@@ -5,6 +5,10 @@ $(document).ready(function () {
     });
     $('[data-toggle="tooltip"]').tooltip();
 });
+// Style Switcher
+$(document).ready(function() {
+    $('#styleOptions').styleSwitcher();
+});
 //Notifications
 $('#notify-success').on('click', function (event) {
     event.preventDefault();
@@ -104,6 +108,47 @@ $('#notify-info-br').on('click', function (event) {
     });
 });
 
+$('#notify-success-bc').on('click', function (event) {
+    event.preventDefault();
+     $.notify({
+        icon: 'fas fa-info-circle',
+        title: '<strong>Info!</strong>',
+        message: 'A simple info notification - check it out!',
+    }, {
+        placement: {
+            from:'bottom',
+            align: 'center'
+        },
+        type: 'success'
+    });
+});
+$('#notify-error-tc').on('click', function (event) {
+    event.preventDefault();
+     $.notify({
+        icon: 'fas fa-info-circle',
+        title: '<strong>Info!</strong>',
+        message: 'A simple info notification - check it out!',
+    }, {
+        placement: {
+            from:'top',
+            align: 'center'
+        },
+        type: 'danger'
+    });
+});
+$('#notify-warning-c').on('click', function (event) {
+    event.preventDefault();
+     $.notify({
+        icon: 'fas fa-info-circle',
+        title: '<strong>Info!</strong>',
+        message: 'A simple info notification - check it out!',
+    }, {
+        placement: {
+            align: 'center'
+        },
+        type: 'warning'
+    });
+});
 
 $('#notify-success-afade').on('click', function (event) {
     event.preventDefault();
