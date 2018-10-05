@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('#leftmenuCollapse').on('click', function () {
         $('#left-menu').toggleClass('active');
+        $('#content-box').toggleClass('active');
         $(this).toggleClass('active');
     });
     $('[data-toggle="tooltip"]').tooltip();
