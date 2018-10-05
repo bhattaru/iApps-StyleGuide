@@ -356,7 +356,9 @@ code, code a {
 .nav-pills {
     border-bottom: 3px solid #edf1f5;
 }
-
+.tab-content {
+    padding: 20px 5px;
+}
 /* Tooltips & Popovers */
 .tooltip-box{
     margin:20px 20px 20px 0;
