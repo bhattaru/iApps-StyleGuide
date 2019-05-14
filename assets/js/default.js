@@ -1,9 +1,14 @@
 $(document).ready(function () {
     $('#leftmenuCollapse').on('click', function () {
         $('#left-menu').toggleClass('active');
+        $('#content-box').toggleClass('active');
         $(this).toggleClass('active');
     });
     $('[data-toggle="tooltip"]').tooltip();
+});
+// Style Switcher
+$(document).ready(function() {
+    $('#styleOptions').styleSwitcher();
 });
 //Notifications
 $('#notify-success').on('click', function (event) {
@@ -104,7 +109,34 @@ $('#notify-info-br').on('click', function (event) {
     });
 });
 
-
+$('#notify-success-bc').on('click', function (event) {
+    event.preventDefault();
+     $.notify({
+        icon: 'fas fa-info-circle',
+        title: '<strong>Info!</strong>',
+        message: 'A simple info notification - check it out!',
+    }, {
+        placement: {
+            from:'bottom',
+            align: 'center'
+        },
+        type: 'success'
+    });
+});
+$('#notify-error-tc').on('click', function (event) {
+    event.preventDefault();
+     $.notify({
+        icon: 'fas fa-info-circle',
+        title: '<strong>Info!</strong>',
+        message: 'A simple info notification - check it out!',
+    }, {
+        placement: {
+            from:'top',
+            align: 'center'
+        },
+        type: 'danger'
+    });
+});
 $('#notify-success-afade').on('click', function (event) {
     event.preventDefault();
      $.notify({

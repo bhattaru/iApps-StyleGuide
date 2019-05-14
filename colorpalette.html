@@ -6,20 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Microchip Internet Applications - Style Guide</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <base href="/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/styles.css" />
     <link rel="icon" href="favicon.png" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
+    <!-- the gear icon that opens the box when you click on it -->
+    <input id="settings-btn" type="checkbox" class="settings-btn">
+    <label for="settings-btn" class="settings-box-element"><i class="fas fa-cog fa-spin"></i></label>
+    <!-- the white box that contains the buttons -->
+    <div class="buttons-wrapper settings-box-element">
+        <div id="styleOptions">
+            <div><a href="javascript: void(0)" data-theme="styles" id="default"><img
+                        src="assets/images/default_bg.png" />
+                    Default Theme</a></div>
+            <div><a href="javascript: void(0)" data-theme="styles-blue" id="styles-blue"><img
+                        src="assets/images/blue_bg.png" />
+                    Blue Theme</a></div>
+            <div><a href="javascript: void(0)" data-theme="styles-green" id="styles-green"><img
+                        src="assets/images/green_bg.png" />
+                    Green Theme </a> </div>
+        </div>
+    </div>
     <div class="wrapper">
         <!-- Left Pane: Start -->
         <div id="left-menu">
-            <img class="logo" src="/assets/images/logo.png">
+            <img class="logo" src="assets/images/logo.png">
             <ul>
                 <li class="link dashboard">
                     <a href="index.html">
@@ -28,7 +48,8 @@
                     </a>
                 </li>
                 <li class="link">
-                    <a data-toggle="collapse" href="#collapse-theme" aria-expanded="false" aria-controls="collapse-theme">
+                    <a data-toggle="collapse" href="#collapse-theme" aria-expanded="false"
+                        aria-controls="collapse-theme">
                         <span><i class="fab fa-ethereum"></i></span>
                         <span>Theme</span>
                     </a>
@@ -98,7 +119,8 @@
                     </a>
                 </li>
                 <li class="link">
-                    <a data-toggle="collapse" href="#collapse-table" aria-expanded="false" aria-controls="collapse-table">
+                    <a data-toggle="collapse" href="#collapse-table" aria-expanded="false"
+                        aria-controls="collapse-table">
                         <span><i class="fas fa-table"></i></span>
                         <span>Tables</span>
                     </a>
@@ -133,7 +155,7 @@
                     </a>
                 </li>
                 <li class="link">
-                    <a href="icons.html">
+                    <a href="https://bhattaru.github.io/i-apps/index.html" target="_blank">
                         <span><i class="fas fa-eye"></i></span>
                         <span>Template Preview</span>
                     </a>
@@ -172,147 +194,61 @@
                                     <div class="row">
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-primary w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Primary Color</p>
-                                            <p>HEX:#e66767</p>
-                                            <p>RGB:rgb(230, 103, 103)</p>
+                                            <p>Primary Color<br /><small>Most freequently displayed color across the
+                                                    template; links, background</small></p>
+                                            <small>HEX: #e66767</small><br />
+                                            <small>RGB: rgb(230, 103, 103)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-dark w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Dark Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#424B54</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(66, 75, 84)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Dark Color<br /><small>Used for all types of headings and secondary
+                                                    buttons</small></p>
+                                            <small>HEX: #424B54</small><br />
+                                            <small>RGB: rgb(66, 75, 84)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-font w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Font Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#6C757D</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(108, 117, 125)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Font Color<br /><small>Used for default font on body of the
+                                                    webpage</small></p>
+                                            <small>HEX: #6C757D</small><br />
+                                            <small>RGB: rgb(108, 117, 125)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-light w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Background Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#F5F8FA</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(245, 248, 250)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Background Color<br /><small>Used for default body background on the
+                                                    template</small></p>
+                                            <small>HEX: #EDF1F5</small><br />
+                                            <small>RGB: rgb(237, 241, 245)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                                                <div class="bg-code-text w-75 rounded mb-2" style="padding-top:75%"></div>
-                                                <p>Code text</p>
-    
-                                                <table class="w-100">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>HEX:</td>
-                                                            <td>#bb32ff</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>RGB:</td>
-                                                            <td>rgb(187, 50, 255)</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-success w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Success Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#28a745</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(40, 167, 69)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Success Color<br /><small>Used for success/positive sets on the
+                                                    template; notifications, alerts, buttons</small></p>
+                                            <small>HEX: #28a745</small><br />
+                                            <small>RGB: rgb(40, 167, 69)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-danger w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Danger Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#dc3545</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(220, 53, 69)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Danger Color<br /><small>Used for danger/error sets on the template;
+                                                    notifications, alerts, buttons</small></p>
+                                            <small>HEX: #dc3545</small><br />
+                                            <small>RGB: rgb(220, 53, 69)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-warning w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Warning Color</p>
-
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#ffc107</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(255, 193, 7)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Warning Color<br /><small>used for warning notifications, alerts and
+                                                    buttons</small></p>
+                                            <small>HEX: #ffc107</small><br />
+                                            <small>RGB: rgb(255, 193, 7)</small>
                                         </div>
                                         <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
                                             <div class="bg-info w-75 rounded mb-2" style="padding-top:75%"></div>
-                                            <p>Info Color</p>
-                                            <table class="w-100">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HEX:</td>
-                                                        <td>#17a2b8</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RGB:</td>
-                                                        <td>rgb(23, 162, 184)</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <p>Info Color<br /><small>used for info notifications, alerts and
+                                                    buttons</small></p>
+                                            <small>HEX: #17a2b8</small><br />
+                                            <small>RGB: rgb(23, 162, 184)</small>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -330,12 +266,14 @@
 
         </div>
         <!-- Content Section: End -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/jQuery.style.switcher.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous">
+        </script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" crossorigin="anonymous"></script>
-        <script src="/assets/js/default.js" crossorigin="anonymous"></script>
-
+        <script src="assets/js/default.js" crossorigin="anonymous"></script>
     </div>
 </body>
 
